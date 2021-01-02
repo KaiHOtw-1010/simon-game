@@ -17,13 +17,23 @@ $(".btn").click(function(){
   checkAnswer(userClickedPattern.length - 1);
 });
 
-$(document).keypress(function() {
+// change keypress function to QQ-button
+$(".QQbtn").click(function(){
   if (!started) {
+    animatePress("QQbtn");
     $("#level-title").text("Level "+level);
     nextSequence();
     started = true;
   }
-});
+})
+
+// $(document).keypress(function() {
+//   if (!started) {
+//     $("#level-title").text("Level "+level);
+//     nextSequence();
+//     started = true;
+//   }
+// });
 
 function checkAnswer(currentLevel) {
   if (userClickedPattern[currentLevel] == gamePattern[currentLevel]) {
@@ -62,7 +72,7 @@ function gameOver() {
   setTimeout(function(){
     $("body").removeClass("game-over");
   }, 200);
-  $("#level-title").text("Game Over, Press Any Key to Restart");
+  $("#level-title").text("Game Over, Press QQ to Restart");
 }
 
 function startOver() {
