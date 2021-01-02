@@ -26,6 +26,23 @@ body {
   border-radius: 20%;
 }
 
+.QQbtn {
+  margin: 30px;
+  display: inline-block;
+  height: 75px;
+  width: 200px;
+  border: 5px solid #A3E4D7;
+  border-radius: 5%;
+  background-color: #EB984E;
+}
+
+#QQ-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  8%;
+  color: #FEF2BF;
+}
+
 .game-over {
   background-color: red;
   opacity: 0.8;
